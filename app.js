@@ -14,7 +14,7 @@ app.use(express.urlencoded({
 // Define GET routes
 app.get('/',(req, res) => {
         //render HTML page with data
-        res.render('index');
+        res.render('/views/index');
 
 });
 
