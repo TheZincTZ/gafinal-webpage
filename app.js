@@ -4,6 +4,7 @@ const app = express();
 
 // Set up view engine
 app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 // enable static files
 app.use(express.static('public'));
 // enable from processing 
@@ -14,7 +15,7 @@ app.use(express.urlencoded({
 // Define GET routes
 app.get('/',(req, res) => {
         //render HTML page with data
-        res.render('/views/index');
+        res.render('index');
 
 });
 
